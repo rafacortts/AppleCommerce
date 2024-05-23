@@ -22,18 +22,17 @@
     </nav>
 
 
-    <div class="Cadastro">
-        <h1 class="CadastroTittle">Crie sua conta ID Apple</h1>
-        <div class="login-container">
-            <form class="login-form" action="/Banco.php" method="POST">
-                <input type="text" name="username" placeholder="Nome" required>
-                <input type="text" name="username" placeholder="CPF" required>
-                <input type="text" name="username" placeholder="Email ou Número de Telefone" required>
-                <input type="password" name="password" placeholder="Senha" required>
-                <input type="password" name="password" placeholder="Confirmar Senha" required>
-                <input type="submit" value="Criar">
-            </form>
-        </div>
+
+    <form action="processar_formulario.php" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="cpf">cpf:</label>
+        <input type="number" id="cpf" name="cpf" required><br><br>
+       
+        <input type="submit" value="Enviar">
+    </form>
    </div>
 </body>
 </html>
