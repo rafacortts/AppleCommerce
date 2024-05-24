@@ -23,6 +23,8 @@ $cpf = $_POST['cpf'];
 ECHO "foiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii";
 
 
+
+
 if ($conn->query($sql) === TRUE) {
     		echo "Registro inserido com sucesso!";
 } else {
@@ -30,4 +32,7 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
+
+header("Location: ../index.html");
+exit();
 ?>
