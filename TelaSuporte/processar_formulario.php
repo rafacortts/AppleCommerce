@@ -20,9 +20,6 @@ $cpf = $_POST['cpf'];
 
       $sql = "INSERT INTO cliente (nome, email, cpf) VALUES ('$nome', '$email', $cpf)";
 
-ECHO "foiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii";
-
-
 
 
 if ($conn->query($sql) === TRUE) {
