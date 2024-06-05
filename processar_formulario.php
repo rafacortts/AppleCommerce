@@ -22,7 +22,7 @@ $sql = "INSERT INTO cliente (nome, email, cpf) VALUES ('$nome', '$email', '$cpf'
 if ($conn->query($sql) === TRUE) {
     echo "<script>
             alert('Registro inserido com sucesso!');
-            window.location.href = '../index.html';
+            window.location.href = './index.html';
           </script>";
 } else {
     echo "Erro ao inserir registro: " . $conn->error;
